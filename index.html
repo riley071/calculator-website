@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Calculator</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+    <!-- header section starts -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-calculator"></i> </i>Brand Name</a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+           <a href="#about">Calculator</a>
+            <a href="#courses">Articles</a>
+            <a href="#contact">More Tools</a>
+            <a href="#contact">Login</a>
+            
+        </nav>
+
+        <div class="icons">
+        
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+   
+  <button id="scrollBtn" onclick="scrollToTop()">Top</button>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section id="home" class="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <section class="swiper-slide slide" style="background: url(images/banner\ \(1\).jpg) no-repeat;">
+                    <div class="content">
+                        <h3>We Sale the best Calculators!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas fugit, officiis
+                            explicabo distinctio ea animi ducimus.</p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="swiper-slide slide" style="background: url(images/banner\ \(2\).jpg) no-repeat;">
+                    <div class="content">
+                        <h3>We Sale the best Calculators!!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas fugit, officiis
+                            explicabo distinctio ea animi ducimus.</p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="swiper-slide slide" style="background: url(images/banner\ \(3\).jpg) no-repeat;">
+                    <div class="content">
+                        <h3>We Sale the best Calculators!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas fugit, officiis
+                            explicabo distinctio ea animi ducimus.</p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+       
+    </section>
+    <br><br> <br>
+<!-- end of home section -->
+
+<!-- calculator section -->
+
+<section class="heading">
+    <h3>Calculator</h3>
+</section>
+
+<div class="container1">
+    <div class="calculator">
+        <div class="display1">
+            <input type="text" id="result" value="0" readonly>
+        </div>
+        <div class="buttons">
+            <button class="operator" onclick="clearDisplay()">C</button>
+            <button  onclick="appendToDisplay('7')">7</button>
+            <button  onclick="appendToDisplay('8')">8</button>
+            <button  onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            <button  onclick="appendToDisplay('4')">4</button>
+            <button  onclick="appendToDisplay('5')">5</button>
+            <button  onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+            <button  onclick="appendToDisplay('1')">1</button>
+            <button  onclick="appendToDisplay('2')">2</button>
+            <button  onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button  onclick="appendToDisplay('0')">0</button>
+            <button  onclick="appendToDisplay('.')">.</button>
+            <button class="operator" onclick="appendToDisplay('=')">=</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<section class="heading-link">
+    <h3>Articles</h3>
+
+</section>
+
+<section class="search-bar">
+    <input type="text" id="search-input" placeholder="search">
+    <button id="search-button">Search</button>
+
+</section>
+
+<section id="art" class="art">
+    <h1 class="heading"> our famous Articles</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="images/art (1).jpg" alt="">
+                <h3>Calculator 1</h3>
+            </div>
+            <div class="content">
+                <h3>Learn how to use a calculator</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+                <a href="#" class="btn"> Read more</a>
+                <div class="icons">
+                    <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+                    <span><i class="fas fa-clock"></i>8 min read</span>
+
+                </div>
+            </div>
+    </div>
+
+ 
+        <div class="box">
+            <div class="image">
+                <img src="images/art (2).jpg" alt="">
+                <h3>Calculator 2</h3>
+            </div>
+            <div class="content">
+                <h3>Learn how to use a calculator</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+                <a href="#" class="btn"> Read more</a>
+                <div class="icons">
+                    <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+                    <span><i class="fas fa-clock"></i>5 min read</span>
+
+                </div>
+            </div>
+          </div>
+
+    
+  
+        <div class="box">
+            <div class="image">
+                <img src="images/art (3).jpg" alt="">
+                <h3>Calculator 3</h3>
+            </div>
+            <div class="content">
+                <h3>Learn how to use a calculator</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+                <a href="#" class="btn"> Read more</a>
+                <div class="icons">
+                    <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+                    <span><i class="fas fa-clock"></i>9 min read</span>
+
+                </div>
+            </div>
+      
+    </div>
+
+    
+   
+        <div class="box">
+            <div class="image">
+                <img src="images/art (4).jpg" alt="">
+                <h3>Calculator 4</h3>
+            </div>
+            <div class="content">
+                <h3>Learn how to use a calculator</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+                <a href="#" class="btn"> Read more</a>
+                <div class="icons">
+                    <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+                    <span><i class="fas fa-clock"></i>7 min read</span>
+
+                </div>
+          
+        </div>
+    </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/art (1).jpg" alt="">
+                <h3>Calculator 5</h3>
+            </div>
+            <div class="content">
+                <h3>Learn how to use a calculator</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+                <a href="#" class="btn"> Read more</a>
+                <div class="icons">
+                    <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+                    <span><i class="fas fa-clock"></i>8 min read</span>
+
+                </div>
+            </div>
+    </div>
+
+
+ 
+        <div class="box">
+            <div class="image">
+                <img src="images/art (1).jpg" alt="">
+                <h3>Calculator 6</h3>
+            </div>
+            <div class="content">
+                <h3>Learn how to use a calculator</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+                <a href="#" class="btn"> Read more</a>
+                <div class="icons">
+                    <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+                    <span><i class="fas fa-clock"></i>8 min read</span>
+
+                </div>
+            </div>
+    </div>
+
+
+    
+ 
+    <div class="box hide">
+        <div class="image">
+            <img src="images/art (1).jpg" alt="">
+            <h3>Calculator 8</h3>
+        </div>
+        <div class="content">
+            <h3>Learn how to use a calculator</h3>
+            <p>Lorem ipsum dolor sit amet consectetur  mike adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+            <a href="#" class="btn"> Read more</a>
+            <div class="icons">
+                <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+                <span><i class="fas fa-clock"></i>8 min read</span>
+
+            </div>
+        </div>
+</div>
+
+<div class="box hide">
+    <div class="image">
+        <img src="images/art (1).jpg" alt="">
+        <h3>Calculator 7</h3>
+    </div>
+    <div class="content">
+        <h3>Learn how to use a calculator</h3>
+        <p>Lorem ipsum dolor sit amet consectetur alex adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+        <a href="#" class="btn"> Read more</a>
+        <div class="icons">
+            <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+            <span><i class="fas fa-clock"></i>8 min read</span>
+
+        </div>
+    </div>
+</div>
+
+<div class="box hide">
+    <div class="image">
+        <img src="images/art (1).jpg" alt="">
+        <h3>Calculator 9</h3>
+    </div>
+    <div class="content">
+        <h3>Learn how to use a calculator</h3>
+        <p>Lorem ipsum dolor sit amet consectetur john adipisicing elit. Consectetur nesciunt, numquam maiores minim</p>
+        <a href="#" class="btn"> Read more</a>
+        <div class="icons">
+            <span><i class="fas fa-calendar-alt"></i>Publised on 2023-10-02</span>
+            <span><i class="fas fa-clock"></i>8 min read</span>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="load-more">
+    <div class="btn">load more</div>
+</div>
+</section>
+
+<!-- more tools section -->
+
+<section class="tools">
+    <h1 class="heading">
+        More Calculator Tools
+    </h1>
+
+    <div class="box-container">
+<div class="box">
+    <img src="images/subject-icon-1.png" alt="" srcset="">
+    <h3>Calculator</h3>
+    <P>Unlock key</P>
+</div>
+
+<div class="box">
+    <img src="images/subject-icon-2.png" alt="" srcset="">
+    <h3>Advanced Calculator</h3>
+    <P>Solve hard math</P>
+</div>
+
+<div class="box">
+    <img src="images/subject-icon-3.png" alt="" srcset="">
+    <h3> Basic Calculator</h3>
+    <P>it wil help you</P>
+</div>
+
+<div class="box">
+    <img src="images/subject-icon-4.png" alt="" srcset="">
+    <h3>Kids Calculator</h3>
+    <P>Unlock key</P>
+</div>
+
+<div class="box">
+    <img src="images/subject-icon-5.png" alt="" srcset="">
+    <h3>New Calculator</h3>
+    <P>Unlock key</P>
+</div>
+
+<div class="box">
+    <img src="images/subject-icon-6.png" alt="" srcset="">
+    <h3>Calculator</h3>
+    <P>Unlock key</P>
+</div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Calculator</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, explicabo! Eum </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="link">home</a>
+            <a href="#" class="link">login</a>
+            <a href="#" class="link">more tools</a>
+            <a href="#" class="link">articles</a>
+        </div>
+
+        <div class="box">
+            <h3>Useful links</h3>
+            <a href="#" class="link">feedback</a>
+            <a href="#" class="link">questions</a>
+            <a href="#" class="link">help center</a>
+            <a href="#" class="link">terms of use</a>
+        </div>
+
+        <div class="box">
+<h3>newletter</h3>
+<p>subscribe for latest news</p>
+<form action="">
+    <input type="email" name="" placeholder="enter email" id="" class="email">
+    <input type="submit" value="" class="btn">
+</form>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- swiper js link -->
+<script src="js/script.js"></script>
+
+<script>
+    document.querySelector('.load-more .btn').onclick = () => {
+    document.querySelectorAll('.art .box-container .hide').forEach(show => {
+        show.style.display = 'block'
+    });
+    document.querySelector('.load-more .btn').style.display = 'none';
+};
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() 
+    {
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollBtn").style.display = "none";
+            }
+        };
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+        const articleBoxes = document.querySelectorAll(".box");
+
+        searchButton.addEventListener("click", function () {
+            const searchTerm = searchInput.value.toLowerCase();
+            let firstMatchedArticle = null;
+
+            articleBoxes.forEach(function (articleBox) {
+                const articleTitle = articleBox.querySelector("h3").textContent.toLowerCase();
+                if (articleTitle.includes(searchTerm)) {
+                    articleBox.style.display = "block";
+                    if (!firstMatchedArticle) {
+                        firstMatchedArticle = articleBox;
+                    }
+                } else {
+                    articleBox.style.display = "none";
+                }
+            });
+            if (firstMatchedArticle) {
+                firstMatchedArticle.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
